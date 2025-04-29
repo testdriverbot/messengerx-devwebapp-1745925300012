@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 6810b9b7831a052014f02219
+steps:
+  - prompt: Click on the "Sign Up" link.
+    commands:
+      - command: hover-text
+        text: Create a free account
+        description: link to create a free account in the webpage content
+        action: click
+  - prompt: Assert the sign-up page loads successfully.
+    commands:
+      - command: assert
+        expect: the "Continue with Email" button is visible
