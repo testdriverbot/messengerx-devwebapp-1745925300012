@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 6810b9d00e064b42739927ea
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Assert the home page loads without errors.
+    commands:
+      - command: assert
+        expect: the home page displays "MessengerX Daily"
