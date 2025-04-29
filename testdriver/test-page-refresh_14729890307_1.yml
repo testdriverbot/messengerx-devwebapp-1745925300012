@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 6810b9ed831a052014f0222b
+steps:
+  - prompt: Refresh the browser page.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Assert the page content remains consistent.
+    commands:
+      - command: assert
+        expect: Sync progress, track streaks, join groups & see your impact is visible
