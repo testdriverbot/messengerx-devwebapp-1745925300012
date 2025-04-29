@@ -1,0 +1,21 @@
+version: 4.2.29
+session: 6810b9cc831a052014f0221f
+steps:
+  - prompt: Click on the "Search" icon.
+    commands:
+      - command: hover-image
+        description: magnifying glass icon on the left sidebar
+        action: click
+  - prompt: Enter a search term.
+    commands:
+      - command: hover-text
+        text: Type here to search
+        description: search input field at the top of the page
+        action: click
+      - command: type
+        text: example search term
+  - prompt: Click "Search."
+    commands:
+      - command: hover-image
+        description: magnifying glass icon next to the search input field
+        action: click
