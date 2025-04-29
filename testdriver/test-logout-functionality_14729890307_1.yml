@@ -1,0 +1,53 @@
+version: 4.2.29
+session: 6810b9bf0e064b42739927e5
+steps:
+  - prompt: Click on "Logout" in the user menu.
+    commands:
+      - command: hover-image
+        description: profile icon in the top right corner of the browser
+        action: click
+  - prompt: Click on "Logout" in the user menu.
+    commands:
+      - command: hover-text
+        text: Logout
+        description: logout option in the user menu
+        action: click
+  - prompt: Click on "Logout" in the user menu.
+    commands:
+      - command: hover-text
+        text: Logout
+        description: logout option in the user menu
+        action: click
+  - prompt: Click on "Logout" in the user menu.
+    commands:
+      - command: hover-image
+        description: profile icon in the top right corner of the browser
+        action: click
+      - command: press-keys
+        keys:
+          - escape
+  - prompt: Click on "Logout" in the user menu.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-image
+        description: profile icon in the top right corner of the browser
+        action: click
+      - command: hover-text
+        text: Logout
+        description: logout option in the user menu
+        action: click
+  - prompt: Click on "Logout" in the user menu.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-image
+        description: profile icon in the top right corner of the browser
+        action: click
+      - command: hover-image
+        description: profile icon in the top right corner of the browser
+        action: click
+  - prompt: Assert the user is logged out and redirected to the homepage.
+    commands:
+      - command: assert
+        expect: the "Sign in to Chrome" button is visible
