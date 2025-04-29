@@ -1,0 +1,23 @@
+version: 4.2.29
+session: 6810b9ec0e064b42739927fa
+steps:
+  - prompt: Navigate to the "Contact Us" page.
+    commands:
+      - command: hover-text
+        text: messengerx-dev.web.app
+        description: address bar in the browser
+        action: click
+      - command: type
+        text: /contact-us
+      - command: press-keys
+        keys:
+          - enter
+      - command: press-keys
+        keys:
+          - control
+          - l
+      - command: type
+        text: messengerx-dev.web.app/contact-us
+      - command: press-keys
+        keys:
+          - enter
